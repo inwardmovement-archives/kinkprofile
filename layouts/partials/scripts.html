@@ -8,5 +8,7 @@
 {{ $bootstrap := resources.Get "scripts/bootstrap.js" }}
 {{ $misc := resources.Get "scripts/misc.js" }}
 {{ $mainJS := slice $jquery $popper $bootstrap $misc | resources.Concat "main.js" }}
-{{ $mainJS = $mainJS | minify | fingerprint }}
+{{ with (getenv "PRODUCTION") }}
+  {{ $mainJS = $mainJS | minify | fingerprint }}
+{{ end }}
 <script src="{{ $mainJS.RelPermalink }}" integrity="{{ $mainJS.Data.Integrity }}"></script>

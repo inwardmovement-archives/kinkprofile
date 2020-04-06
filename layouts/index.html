@@ -1,12 +1,12 @@
 {{ define "main" }}
   <main class="main">
     <div class="container-fluid">
-      <header>
+      <header class="header">
         <div class="header-brand">
           <img class="brand-image" src="{{ (resources.Get "/images/logo.jpg").RelPermalink }}" width="68.8" height="68.8" alt="logo">
-          <h1 class="page-title">{{ .Site.Title }}</h1>
+          <h1 class="brand-title display-4">{{ .Site.Title }}</h1>
         </div>
-        <h2 class="page-subtitle">{{ .Site.Params.description }}</h2>
+        <h3 class="site-slogan">{{ .Site.Params.description }}</h3>
       </header>
 
       <ul class="nav nav-pills nav-justified" id="myTab" role="tablist" aria-label="Main navigation">

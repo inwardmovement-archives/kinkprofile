@@ -1,4 +1,6 @@
 {{ $mainCSS := resources.Get "styles/app.scss" | resources.ToCSS | resources.PostCSS (dict "use" "autoprefixer") }}
 {{ $mainCSS = slice $mainCSS | resources.Concat "main.css" }}
-{{ $mainCSS = $mainCSS | minify | fingerprint }}
+{{ with (getenv "PRODUCTION") }}
+  {{ $mainCSS = $mainCSS | minify | fingerprint }}
+{{ end }}
 <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}">

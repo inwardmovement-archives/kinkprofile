@@ -6,6 +6,7 @@ on:
       - master
 
 env:
+  PRODUCTION: true
   HUGO_VERSION: '0.66.0'
   NODE_VERSION: '12.16.1'
   NETLIFY_SITE_ID: 'e57c3b42-5d4c-40e0-99c8-1b5057d80680'
