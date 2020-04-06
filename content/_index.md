@@ -4,4 +4,4 @@ toc: false
 draft: false
 ---
 
-# Welcome on KinkProfile
+# How to
