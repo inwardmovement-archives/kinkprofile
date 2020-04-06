@@ -1,0 +1,146 @@
+.nav-main {
+  .navbar-brand {
+    padding: 0;
+    color: #88b1db;
+    font-family: 'Comfortaa', sans-serif;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: rgba(0, 0, 0, 0.1);
+    text-decoration-thickness: .2em;
+
+    &:hover {
+      color: #88b1db;
+    }
+
+    img {
+      margin-right: .5rem;
+      vertical-align: top;
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: space-between;
+
+    svg.bi {
+      width: initial;
+
+      &.bi-box-arrow-up-right {
+        margin-left: .2em;
+      }
+    }
+
+    .nav-left {
+      flex-grow: 1;
+      flex-wrap: wrap;
+
+      a,
+      .dropdown a {
+        color: #db8888;
+
+        &:hover,
+        &:focus {
+          color: darken($color: #db8888, $amount: 15);
+        }
+
+        &.active {
+          color: #db8888;
+          font-weight: 600;
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-color: rgba(0, 0, 0, 0.1);
+          text-decoration-thickness: .2em;
+        }
+
+        &.dropdown-item.active,
+        &.dropdown-item:active {
+          color: #fff;
+          background-color: #db8888;
+          font-weight: initial;
+          text-decoration: none;
+        }
+      }
+
+      .home-link {
+        padding-top: .5em;
+        padding-bottom: .25em;
+      }
+
+      .home-link .bi {
+        font-size: 1.8em;
+      }
+
+      .home-link:hover,
+      .home-link:focus {
+        color: darken($color: #db8888, $amount: 10);
+      }
+
+      .home-link.active {
+        color: darken($color: #db8888, $amount: 10);
+      }
+    }
+  }
+
+  .nav-right {
+    flex-shrink: 0;
+    margin-top: .5rem;
+
+    > * + * {
+      margin-top: .5rem;
+    }
+  }
+
+
+  .meta {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+
+    > * + * {
+      margin-top: .5rem;
+    }
+  }
+
+  .dropdown .btn {
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-main {
+    .navbar-brand {
+      display: none;
+    }
+
+    .navbar-collapse {
+      .nav-link {
+        font-size: 1.05em;
+        padding-left: .75em !important;
+        padding-right: .75em !important;
+      }
+
+      .nav-left {
+        align-items: center;
+
+        .home-link {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+
+      .nav-right {
+        margin-left: 1em;
+        margin-top: initial;
+      }
+
+      .nav-right > *,
+      .meta > * {
+        margin-top: initial;
+      }
+
+      .meta {
+        display: none;
+        margin-top: initial;
+      }
+    }
+  }
+}

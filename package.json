@@ -1,0 +1,19 @@
+{
+  "name": "kinkprofile",
+  "version": "1.0.0",
+  "description": "[kinkprofile.netlify.app](https://kinkprofile.netlify.app/)  \r A spreadsheet to share one's kinks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inwardmovement/kinklist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inwardmovement/kinklist/issues"
+  },
+  "homepage": "https://github.com/inwardmovement/kinklist#readme"
+}

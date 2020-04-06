@@ -1,0 +1,38 @@
+baseURL: "https://kinkprofile.netlify.app/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+title: "KinkProfile"
+canonifyURLs: false
+relativeURLs: true
+disableFastRender: true
+disableLiveReload: true
+metaDataFormat: yaml
+rssLimit: 10
+enableRobotsTXT: true
+params:
+  description: "Share your kinks"
+  author: "Inward Movement"
+author:
+  name: "Inward Movement"
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: false
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: blackfriday
+    renderer:
+      hardWraps: true
+      unsafe: true
+      xHTML: false
+  tableOfContents:
+    startLevel: 1
+    endLevel: 5
+footnoteReturnLinkContents: "↑"

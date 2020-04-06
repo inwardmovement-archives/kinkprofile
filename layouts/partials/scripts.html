@@ -1,0 +1,12 @@
+<script>
+  var baseURL = {{ .Site.Home.Permalink }};
+  var externalLinkIcon = {{ (resources.Get "icons/box-arrow-up-right.svg").Content | safeHTML | replaceRE "\n\\s*" "" }};
+</script>
+
+{{ $jquery := resources.Get "scripts/jquery.js" }}
+{{ $popper := resources.Get "scripts/popper.js" }}
+{{ $bootstrap := resources.Get "scripts/bootstrap.js" }}
+{{ $misc := resources.Get "scripts/misc.js" }}
+{{ $mainJS := slice $jquery $popper $bootstrap $misc | resources.Concat "main.js" }}
+{{ $mainJS = $mainJS | minify | fingerprint }}
+<script src="{{ $mainJS.RelPermalink }}" integrity="{{ $mainJS.Data.Integrity }}"></script>
