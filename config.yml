@@ -10,7 +10,7 @@ metaDataFormat: yaml
 rssLimit: 10
 enableRobotsTXT: true
 params:
-  description: "Share your kinks"
+  description: "Share your kinks!"
   author: "Inward Movement"
 author:
   name: "Inward Movement"

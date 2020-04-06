@@ -1,38 +1,11 @@
 {{ define "main" }}
   <main class="main">
     <div class="container-fluid">
-      <header class="header">
-        <div class="header-brand">
-          <img class="brand-image" src="{{ (resources.Get "/images/logo.jpg").RelPermalink }}" width="68.8" height="68.8" alt="logo">
-          <h1 class="brand-title display-4">{{ .Site.Title }}</h1>
-        </div>
-        <h3 class="site-slogan">{{ .Site.Params.description }}</h3>
-      </header>
-
-      <ul class="nav nav-pills nav-justified" id="myTab" role="tablist" aria-label="Main navigation">
-        <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">How to</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Changelog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">About</a>
-        </li>
-      </ul>
-
-      <div class="tab-content">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <div>hero presentation</div>
-          {{ with .Params.toc }}{{ $.TableOfContents }}<br><br>{{ end }}
-          <article class="article">
-            {{ .Content }}
-          </article>
-        </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">changelog</div>
-        <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">about</div>
-      </div>
-
+      {{ partial "header" . }}
+      {{ with .Params.toc }}{{ $.TableOfContents }}<br><br>{{ end }}
+      <article class="content">
+        {{ .Content }}
+      </article>
     </div>
   </main>
   {{ partial "top-btn" . }}
