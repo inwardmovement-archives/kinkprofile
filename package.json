@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inwardmovement/kinklist.git"
+    "url": "git+https://github.com/inwardmovement/kinkprofile.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/inwardmovement/kinklist/issues"
+    "url": "https://github.com/inwardmovement/kinkprofile/issues"
   },
-  "homepage": "https://github.com/inwardmovement/kinklist#readme"
+  "homepage": "https://github.com/inwardmovement/kinkprofile"
 }
