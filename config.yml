@@ -11,9 +11,9 @@ rssLimit: 10
 enableRobotsTXT: true
 params:
   description: "Share your kinks!"
-  author: "Inward Movement"
+  author: "inwardmovement"
 author:
-  name: "Inward Movement"
+  name: "inwardmovement"
 markup:
   goldmark:
     extensions:
