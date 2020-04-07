@@ -12,5 +12,5 @@ KinkProfile is a **spreadsheet** that facilitates identifying and sharing one's 
 - Fill in your **name** and **preferences**.
 - Export and share!
 
-### More information
+### About
 [GitHub repository](https://github.com/inwardmovement/kinkprofile)

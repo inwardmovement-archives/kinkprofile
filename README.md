@@ -6,6 +6,5 @@ A spreadsheet to share one's kinks
 
 ## Vision
 - Facilitate identifying and sharing one's kinks.
-- Focus on legal/realistic/multiplayer kinks.
-- Provide a not-too-specific list of kinks, and allow for adding custom kinks.
-- The use of GSheet has its advantages and drawbacks: this is the compromise chosen by the author.
+- Focus on legal/realistic/non-solo kinks.
+- Provide a list of not-so-specific kinks, and allow adding custom kinks.
