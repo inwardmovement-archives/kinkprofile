@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "KinkProfile"
 toc: false
 draft: false
 ---
