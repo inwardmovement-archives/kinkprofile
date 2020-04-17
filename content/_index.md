@@ -1,5 +1,6 @@
 ---
 title: "KinkProfile"
+description: "A spreadsheet to share your kinks"
 toc: false
 draft: false
 ---
