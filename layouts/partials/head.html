@@ -12,6 +12,7 @@
 {{ range .AlternativeOutputFormats }}
     {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
 {{ end }}
+<meta name="google-site-verification" content="Y8YrCGJfpw0crBLD3X8UpKmSiIpbqwsvMwNw3gM6cBE" />
 {{ partial "styles" . }}
 <link href="{{ (resources.Get "/images/logo-kinkprofile.png").RelPermalink }}" rel="icon" type="image/x-icon" />
 <title>{{ if $.IsHome }}{{ $.Site.Title }} | {{ $.Site.Params.description }}{{ else }}{{ $.Title }} | {{ $.Site.Title }}{{ end }}</title>
