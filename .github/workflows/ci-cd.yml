@@ -38,5 +38,5 @@ jobs:
       run: hugo
       if: success()
     - name: Deploy site
-      run: netlify deploy --prod --dir public
+      run: npm run deploy
       if: success()
