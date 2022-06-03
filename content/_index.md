@@ -18,6 +18,6 @@ Google Sheet is used as a compromise between features, UX and DX in regards to t
 
 The approach is opt-in and personalized: we do not provide a list of predetermined kinks. Should you need inspiration, you may have a look at Wikipedia's [List of paraphilias](https://en.wikipedia.org/wiki/List_of_paraphilias).
 
-Any suggestions? Feel free to [create an issue](https://github.com/inwardmovement/kinkprofile/issues/new) on GitHub.
+Any suggestions? Feel free to [create an issue](https://github.com/inwardmovement-archives/kinkprofile/issues/new) on GitHub.
 
-> Inspired by [KinkList](https://cdn.rawgit.com/Goctionni/KinkList/master/v1.0.2.html)
+> Inspired by [KinkList](https://github.com/Goctionni/KinkList)
